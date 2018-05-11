@@ -1,0 +1,129 @@
+
+body,html{margin:0;padding:0;}
+
+.wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 2px;
+}
+
+.section {
+  position: relative;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 0 5px #000;
+}
+
+.parallax::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1.5);
+  background-size: 100%; 
+  z-index: -1;
+}
+
+.static {
+  background: grey;
+}
+
+.bg1::after {
+  background-image: url('https://images.pexels.com/photos/872958/pexels-photo-872958.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+
+.bg2::after {
+  background-image: url('https://images.pexels.com/photos/399160/pexels-photo-399160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+/* html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.hello {
+    letter-spacing: .2em;
+}
+
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    perspective: 1px;
+}
+
+.slide {
+    position: relative;
+    padding: 25vh 10%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 5px #000;
+} */
+
+/* html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.intro-header {
+    box-sizing: border-border;
+    min-height: 100vh;
+    padding: 30vh 0 5vw;
+    position: relative;
+    transform-style: inherit;
+    width: 100vh;
+    font-weight: normal;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+
+header h1 {
+    margin-top: -100px;
+}
+
+header, header:before {
+    background: 50% 50%/ cover;
+}
+
+header::before {
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-color: pink; 
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    min-height: 100vh;
+}
+ */
