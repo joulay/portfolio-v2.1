@@ -18,6 +18,10 @@ body,html{margin:0;padding:0;}
   text-shadow: 0 0 5px #000;
 }
 
+/* .static {
+    height: 200vh;
+} */
+
 .parallax::after {
   content: " ";
   position: absolute;
